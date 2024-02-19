@@ -1,30 +1,42 @@
-# React + TypeScript + Vite
+## Text Editor App
+This is a simple text editor application built with React and Material-UI.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+### Features
+- Automatically format text based on certain characters typed at the beginning of a line:
+  - Typing # followed by a space creates a heading format.
+  - Typing * followed by a space makes the text bold.
+  - Typing ** followed by a space changes the text color to red.
+  - Typing *** followed by a space underlines the text.
+- Save and retrieve text content from local storage.
 
-Currently, two official plugins are available:
+## Installation
+1. Clone the repository:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+```bash
+git clone https://github.com/RAJ4823/react-sorcerer.git
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+2. Navigate to the project directory:
+```bash
+cd app
+```
+
+3. Install dependencies:
+
+```bash
+npm install
+```
+
+4. Start the development server:
+
+```bash
+npm run dev
+```
+
+5. Open your browser and go to `http://localhost:3000` to view the app.
+
+6. Edit the text in the editor, customize the title, and save your changes.
+
+## Author
+
+[RAJ4823](https://github.com/RAJ4823)
